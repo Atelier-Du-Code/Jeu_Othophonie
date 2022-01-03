@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Questionnaire>	
+	<Mot bonneReponse = "le"></Mot>
+	<Mot bonneReponse = "la"></Mot>
+	<Mot bonneReponse = "il"></Mot>
+	<Mot bonneReponse = "dans"></Mot>
+	<Mot bonneReponse = "sous"></Mot>
+	<Mot bonneReponse = "elle"></Mot>		
+	<Mot bonneReponse = "me"></Mot>
+	<Mot bonneReponse = "avec"></Mot>
+	<Mot bonneReponse = "plus"></Mot>
+	<Mot bonneReponse = "au"></Mot>
+	<Mot bonneReponse = "sur"></Mot>
+	<Mot bonneReponse = "lui"></Mot>
+	<Mot bonneReponse = "des"></Mot>
+	<Mot bonneReponse = "les"></Mot>
+	<Mot bonneReponse = "lundi"></Mot>
+	<Mot bonneReponse = "mardi"></Mot>
+	<Mot bonneReponse = "mercredi"></Mot>
+	<Mot bonneReponse = "jeudi"></Mot>
+	<Mot bonneReponse = "vendredi"></Mot>
+	<Mot bonneReponse = "samedi"></Mot>
+	<Mot bonneReponse = "dimanche"></Mot>
+	<Mot bonneReponse = "rose"></Mot>
+	
+
+	<Syllabe bonneReponse = "bal" piege1 = "lab" piege2 ="tal"></Syllabe>
+	<Syllabe bonneReponse = "ail" piege1 = "eil" piege2 ="ouil"></Syllabe>
+	<Syllabe bonneReponse = "top" piege1 = "pot" piege2 ="hop"></Syllabe>	
+	<Syllabe bonneReponse = "biz" piege1 = "buz" piege2 ="bas"></Syllabe>
+	<Syllabe bonneReponse = "cha" piege1 = "che" piege2 ="chou"></Syllabe>
+	<Syllabe bonneReponse = "ou" piege1 = "oi" piege2 ="on"></Syllabe>
+	<Syllabe bonneReponse = "oie" piege1 = "on" piege2 ="ou"></Syllabe>
+	<Syllabe bonneReponse = "oin" piege1 = "ion" piege2 ="ien"></Syllabe>
+	<Syllabe bonneReponse = "ion" piege1 = "ien" piege2 ="oin"></Syllabe>
+	<Syllabe bonneReponse = "euil" piege1 = "eil" piege2 ="ail"></Syllabe>	
+	<Syllabe bonneReponse = "go" piege1 = "gu" piege2 ="ga"></Syllabe>
+	<Syllabe bonneReponse = "gu" piege1 = "go" piege2 ="ga"></Syllabe>
+	<Syllabe bonneReponse = "gue" piege1 = "guy" piege2 ="geu"></Syllabe>
+	<Syllabe bonneReponse = "geu" piege1 = "gue" piege2 ="guy"></Syllabe>
+	<Syllabe bonneReponse = "guy" piege1 = "geu" piege2 ="gue"></Syllabe>
+</Questionnaire>

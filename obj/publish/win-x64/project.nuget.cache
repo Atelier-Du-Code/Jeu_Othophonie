@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "tqtXFLWz3phpUocbDE61eoqehsPuup8FjSpQ5flnDVP7zuultrzIf7d8Jgf2McHL1Cyez8ndBAzsZYZ8l4vbtw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Utilisateur\\source\\repos\\Définitif_Mathilde\\Definitif_Mathilde_App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.22\\microsoft.netcore.app.runtime.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.22\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.22.nupkg.sha512",
+    "C:\\Users\\Utilisateur\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.22\\microsoft.aspnetcore.app.runtime.win-x64.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}
