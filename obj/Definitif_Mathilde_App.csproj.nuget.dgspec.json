@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Jeu_Orthophonie\\Definitif_Mathilde_App.csproj": {}
+    "C:\\TestAsupprimertoutdesuite\\Definitif_Mathilde_App.csproj": {}
   },
   "projects": {
-    "C:\\Jeu_Orthophonie\\Definitif_Mathilde_App.csproj": {
+    "C:\\TestAsupprimertoutdesuite\\Definitif_Mathilde_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Jeu_Orthophonie\\Definitif_Mathilde_App.csproj",
+        "projectUniqueName": "C:\\TestAsupprimertoutdesuite\\Definitif_Mathilde_App.csproj",
         "projectName": "Definitif_Mathilde_App",
-        "projectPath": "C:\\Jeu_Orthophonie\\Definitif_Mathilde_App.csproj",
+        "projectPath": "C:\\TestAsupprimertoutdesuite\\Definitif_Mathilde_App.csproj",
         "packagesPath": "C:\\Users\\Utilisateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Jeu_Orthophonie\\obj\\",
+        "outputPath": "C:\\TestAsupprimertoutdesuite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
