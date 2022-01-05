@@ -132,3 +132,4 @@ C:\AjoutAdminMathilde\obj\Debug\netcoreapp3.1\Definitif_Mathilde_App.AssemblyInf
 C:\AjoutAdminMathilde\obj\Debug\netcoreapp3.1\Definitif_Mathilde_App.AssemblyInfo.cs
 C:\AjoutAdminMathilde\obj\Debug\netcoreapp3.1\Definitif_Mathilde_App.csproj.CoreCompileInputs.cache
 C:\AjoutAdminMathilde\obj\Debug\netcoreapp3.1\Definitif_Mathilde_App.genruntimeconfig.cache
+C:\AjoutAdminMathilde\obj\Debug\netcoreapp3.1\Definitif_Mathilde_App.Acceuil_Authentification.resources
