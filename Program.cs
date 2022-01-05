@@ -17,7 +17,7 @@ namespace Definitif_Mathilde_App
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new Acceuil_Authentification());
         }
     }
 }

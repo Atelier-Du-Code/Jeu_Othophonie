@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<registre>
+	<profil identifiant="admin" MotDePasse="adminMDP"></profil>
+	<profil identifiant="patient" MotDePasse="patientMDP"></profil>
+</registre>

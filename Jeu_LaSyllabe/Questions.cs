@@ -32,14 +32,7 @@ namespace Definitif_Mathilde_App
     {
         public string bonneReponse;
         public string piege1;
-        public string piege2;
-        /*
-        public UneQuestion(string _bonneReponse, string _piege1, string _piege2)
-        {
-            bonneReponse = _bonneReponse;
-            piege1 = _piege1;
-            piege2 = _piege2;
-        }*/
+        public string piege2;      
 
     }
 }

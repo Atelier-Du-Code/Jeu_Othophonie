@@ -1,7 +1,7 @@
 ﻿
 namespace Definitif_Mathilde_App
 {
-    partial class Authentification
+    partial class Acceuil_Authentification
     {
         /// <summary>
         /// Required designer variable.
@@ -31,21 +31,23 @@ namespace Definitif_Mathilde_App
         {
             this.btnConnexion = new System.Windows.Forms.Button();
             this.txtbIdentifiant = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtbMotDePasse = new System.Windows.Forms.TextBox();
             this.btnQuitter = new System.Windows.Forms.Button();
             this.lblTitre = new System.Windows.Forms.Label();
             this.lblIdentifiant = new System.Windows.Forms.Label();
             this.lblMotDePasse = new System.Windows.Forms.Label();
+            this.lblVerif = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnConnexion
             // 
-            this.btnConnexion.Location = new System.Drawing.Point(334, 289);
+            this.btnConnexion.Location = new System.Drawing.Point(334, 305);
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(94, 29);
             this.btnConnexion.TabIndex = 0;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.UseVisualStyleBackColor = true;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // txtbIdentifiant
             // 
@@ -53,13 +55,15 @@ namespace Definitif_Mathilde_App
             this.txtbIdentifiant.Name = "txtbIdentifiant";
             this.txtbIdentifiant.Size = new System.Drawing.Size(125, 27);
             this.txtbIdentifiant.TabIndex = 1;
+            this.txtbIdentifiant.TextChanged += new System.EventHandler(this.txtbIdentifiant_TextChanged);
             // 
-            // textBox2
+            // txtbMotDePasse
             // 
-            this.textBox2.Location = new System.Drawing.Point(322, 224);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 2;
+            this.txtbMotDePasse.Location = new System.Drawing.Point(322, 224);
+            this.txtbMotDePasse.Name = "txtbMotDePasse";
+            this.txtbMotDePasse.Size = new System.Drawing.Size(125, 27);
+            this.txtbMotDePasse.TabIndex = 2;
+            this.txtbMotDePasse.TextChanged += new System.EventHandler(this.txtbMotDePasse_TextChanged);
             // 
             // btnQuitter
             // 
@@ -69,6 +73,7 @@ namespace Definitif_Mathilde_App
             this.btnQuitter.TabIndex = 3;
             this.btnQuitter.Text = "Quitter";
             this.btnQuitter.UseVisualStyleBackColor = true;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // lblTitre
             // 
@@ -97,19 +102,29 @@ namespace Definitif_Mathilde_App
             this.lblMotDePasse.TabIndex = 6;
             this.lblMotDePasse.Text = "Mot de passe";
             // 
-            // Authentification
+            // lblVerif
+            // 
+            this.lblVerif.AutoSize = true;
+            this.lblVerif.Location = new System.Drawing.Point(376, 268);
+            this.lblVerif.Name = "lblVerif";
+            this.lblVerif.Size = new System.Drawing.Size(15, 20);
+            this.lblVerif.TabIndex = 7;
+            this.lblVerif.Text = "-";
+            // 
+            // Acceuil_Authentification
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblVerif);
             this.Controls.Add(this.lblMotDePasse);
             this.Controls.Add(this.lblIdentifiant);
             this.Controls.Add(this.lblTitre);
             this.Controls.Add(this.btnQuitter);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtbMotDePasse);
             this.Controls.Add(this.txtbIdentifiant);
             this.Controls.Add(this.btnConnexion);
-            this.Name = "Authentification";
+            this.Name = "Acceuil_Authentification";
             this.Text = "Authentification";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,10 +135,11 @@ namespace Definitif_Mathilde_App
 
         private System.Windows.Forms.Button btnConnexion;
         private System.Windows.Forms.TextBox txtbIdentifiant;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtbMotDePasse;
         private System.Windows.Forms.Button btnQuitter;
         private System.Windows.Forms.Label lblTitre;
         private System.Windows.Forms.Label lblIdentifiant;
         private System.Windows.Forms.Label lblMotDePasse;
+        private System.Windows.Forms.Label lblVerif;
     }
 }
