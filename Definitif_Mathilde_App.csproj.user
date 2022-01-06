@@ -8,6 +8,9 @@
     <Compile Update="Authentification\Acceuil_Authentification.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Authentification\ChangementMotDePasse.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Jeu_LaSyllabe\Jeu_LaSyllabe.cs">
       <SubType>Form</SubType>
     </Compile>

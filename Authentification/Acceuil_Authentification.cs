@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Definitif_Mathilde_App.Authentification;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
+
 
 namespace Definitif_Mathilde_App
 {
@@ -16,15 +18,23 @@ namespace Definitif_Mathilde_App
         public List<string> LstIdentifiant = new List<string>();
         public List<string> LstMotDePasse = new List<string>();
 
-        //Mécanique Autentification        
+        //Mécanique Authentification        
         bool bIdentifiantValide = false;
         bool bMotDePasseValide = false;
+
+        //Modification du mot de passe
+        public ChangementMotDePasse changementMotDePasse = new ChangementMotDePasse();
+
+        
         public Acceuil_Authentification()
         {
             InitializeComponent();
             LecteurXML_Autentification();            
         }
-
+        private void Acceuil_Authentification_Load(object sender, EventArgs e)
+        {
+            lblNotif.Visible = false;
+        }
         private void btnQuitter_Click(object sender, EventArgs e)
         {
             Close();
@@ -34,12 +44,13 @@ namespace Definitif_Mathilde_App
         {
             bIdentifiantValide = false;
             bMotDePasseValide = false;
+            lblNotif.Visible = false;
 
             VerifieIdentifiant();
             VerifieMotDePasse();
             Validation();
-
         }
+               
 
         public void LecteurXML_Autentification()
         {
@@ -79,12 +90,14 @@ namespace Definitif_Mathilde_App
 
                 if (bMotDePasseValide == false)
                 {
-                    lblVerif.Text = "Votre mot de passe est incorrecte";
+                    lblNotif.Text = "Votre mot de passe est incorrecte";
+                    lblNotif.Visible = true;
                 }
             }
             else
             {
-                lblVerif.Text = "Votre identifiant est incorrecte";
+                lblNotif.Text = "Votre identifiant est incorrecte";
+                lblNotif.Visible = true;
             }           
         }
 
@@ -99,12 +112,20 @@ namespace Definitif_Mathilde_App
 
         private void txtbIdentifiant_TextChanged(object sender, EventArgs e)
         {            
-            lblVerif.Text = "";
+            lblNotif.Text = "";
+            
         }
 
         private void txtbMotDePasse_TextChanged(object sender, EventArgs e)
         {
-            lblVerif.Text = "";
+            lblNotif.Text = "";            
         }
+
+        private void lblChangementMotDePasse_Click(object sender, EventArgs e)
+        {
+            //changementMotDePasse.Show();
+        }
+
+        
     }
 }

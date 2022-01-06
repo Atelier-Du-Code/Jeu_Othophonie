@@ -29,117 +29,184 @@ namespace Definitif_Mathilde_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnConnexion = new System.Windows.Forms.Button();
             this.txtbIdentifiant = new System.Windows.Forms.TextBox();
             this.txtbMotDePasse = new System.Windows.Forms.TextBox();
-            this.btnQuitter = new System.Windows.Forms.Button();
-            this.lblTitre = new System.Windows.Forms.Label();
-            this.lblIdentifiant = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnConnexion = new System.Windows.Forms.Button();
+            this.lblMotDePasseOublie = new System.Windows.Forms.Label();
             this.lblMotDePasse = new System.Windows.Forms.Label();
-            this.lblVerif = new System.Windows.Forms.Label();
+            this.lblIdentifiant = new System.Windows.Forms.Label();
+            this.lblNotif = new System.Windows.Forms.Label();
+            this.lblTitre_Authntification = new System.Windows.Forms.Label();
+            this.btnQuitter = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnConnexion
-            // 
-            this.btnConnexion.Location = new System.Drawing.Point(334, 305);
-            this.btnConnexion.Name = "btnConnexion";
-            this.btnConnexion.Size = new System.Drawing.Size(94, 29);
-            this.btnConnexion.TabIndex = 0;
-            this.btnConnexion.Text = "Connexion";
-            this.btnConnexion.UseVisualStyleBackColor = true;
-            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // txtbIdentifiant
             // 
-            this.txtbIdentifiant.Location = new System.Drawing.Point(322, 160);
+            this.txtbIdentifiant.Font = new System.Drawing.Font("Maiandra GD", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbIdentifiant.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtbIdentifiant.Location = new System.Drawing.Point(292, 228);
             this.txtbIdentifiant.Name = "txtbIdentifiant";
-            this.txtbIdentifiant.Size = new System.Drawing.Size(125, 27);
+            this.txtbIdentifiant.Size = new System.Drawing.Size(297, 37);
             this.txtbIdentifiant.TabIndex = 1;
+            this.txtbIdentifiant.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtbIdentifiant.TextChanged += new System.EventHandler(this.txtbIdentifiant_TextChanged);
             // 
             // txtbMotDePasse
             // 
-            this.txtbMotDePasse.Location = new System.Drawing.Point(322, 224);
+            this.txtbMotDePasse.BackColor = System.Drawing.Color.White;
+            this.txtbMotDePasse.Font = new System.Drawing.Font("Maiandra GD", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtbMotDePasse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtbMotDePasse.Location = new System.Drawing.Point(292, 339);
             this.txtbMotDePasse.Name = "txtbMotDePasse";
-            this.txtbMotDePasse.Size = new System.Drawing.Size(125, 27);
+            this.txtbMotDePasse.Size = new System.Drawing.Size(297, 37);
             this.txtbMotDePasse.TabIndex = 2;
+            this.txtbMotDePasse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtbMotDePasse.TextChanged += new System.EventHandler(this.txtbMotDePasse_TextChanged);
             // 
-            // btnQuitter
+            // panel1
             // 
-            this.btnQuitter.Location = new System.Drawing.Point(646, 380);
-            this.btnQuitter.Name = "btnQuitter";
-            this.btnQuitter.Size = new System.Drawing.Size(94, 29);
-            this.btnQuitter.TabIndex = 3;
-            this.btnQuitter.Text = "Quitter";
-            this.btnQuitter.UseVisualStyleBackColor = true;
-            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnConnexion);
+            this.panel1.Controls.Add(this.lblMotDePasseOublie);
+            this.panel1.Controls.Add(this.lblMotDePasse);
+            this.panel1.Controls.Add(this.lblIdentifiant);
+            this.panel1.Controls.Add(this.lblNotif);
+            this.panel1.Controls.Add(this.txtbIdentifiant);
+            this.panel1.Controls.Add(this.lblTitre_Authntification);
+            this.panel1.Controls.Add(this.txtbMotDePasse);
+            this.panel1.Controls.Add(this.btnQuitter);
+            this.panel1.Location = new System.Drawing.Point(5, 6);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(889, 598);
+            this.panel1.TabIndex = 9;
             // 
-            // lblTitre
+            // btnConnexion
             // 
-            this.lblTitre.AutoSize = true;
-            this.lblTitre.Location = new System.Drawing.Point(322, 63);
-            this.lblTitre.Name = "lblTitre";
-            this.lblTitre.Size = new System.Drawing.Size(115, 20);
-            this.lblTitre.TabIndex = 4;
-            this.lblTitre.Text = "Authentification";
+            this.btnConnexion.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnConnexion.FlatAppearance.BorderColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnConnexion.FlatAppearance.BorderSize = 2;
+            this.btnConnexion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnConnexion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
+            this.btnConnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConnexion.Font = new System.Drawing.Font("Maiandra GD", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConnexion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnConnexion.Location = new System.Drawing.Point(370, 431);
+            this.btnConnexion.Name = "btnConnexion";
+            this.btnConnexion.Size = new System.Drawing.Size(146, 42);
+            this.btnConnexion.TabIndex = 21;
+            this.btnConnexion.Text = "Connexion";
+            this.btnConnexion.UseVisualStyleBackColor = false;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
-            // lblIdentifiant
+            // lblMotDePasseOublie
             // 
-            this.lblIdentifiant.AutoSize = true;
-            this.lblIdentifiant.Location = new System.Drawing.Point(334, 137);
-            this.lblIdentifiant.Name = "lblIdentifiant";
-            this.lblIdentifiant.Size = new System.Drawing.Size(77, 20);
-            this.lblIdentifiant.TabIndex = 5;
-            this.lblIdentifiant.Text = "Identifiant";
+            this.lblMotDePasseOublie.BackColor = System.Drawing.Color.Transparent;
+            this.lblMotDePasseOublie.Font = new System.Drawing.Font("Maiandra GD", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMotDePasseOublie.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblMotDePasseOublie.Location = new System.Drawing.Point(7, 477);
+            this.lblMotDePasseOublie.Name = "lblMotDePasseOublie";
+            this.lblMotDePasseOublie.Size = new System.Drawing.Size(876, 36);
+            this.lblMotDePasseOublie.TabIndex = 20;
+            this.lblMotDePasseOublie.Text = "Mot de passe oublié?";
+            this.lblMotDePasseOublie.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMotDePasse
             // 
-            this.lblMotDePasse.AutoSize = true;
-            this.lblMotDePasse.Location = new System.Drawing.Point(334, 201);
+            this.lblMotDePasse.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMotDePasse.Font = new System.Drawing.Font("Maiandra GD", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblMotDePasse.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblMotDePasse.Location = new System.Drawing.Point(0, 299);
             this.lblMotDePasse.Name = "lblMotDePasse";
-            this.lblMotDePasse.Size = new System.Drawing.Size(98, 20);
-            this.lblMotDePasse.TabIndex = 6;
+            this.lblMotDePasse.Size = new System.Drawing.Size(886, 37);
+            this.lblMotDePasse.TabIndex = 19;
             this.lblMotDePasse.Text = "Mot de passe";
+            this.lblMotDePasse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblVerif
+            // lblIdentifiant
             // 
-            this.lblVerif.AutoSize = true;
-            this.lblVerif.Location = new System.Drawing.Point(376, 268);
-            this.lblVerif.Name = "lblVerif";
-            this.lblVerif.Size = new System.Drawing.Size(15, 20);
-            this.lblVerif.TabIndex = 7;
-            this.lblVerif.Text = "-";
+            this.lblIdentifiant.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblIdentifiant.Font = new System.Drawing.Font("Maiandra GD", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblIdentifiant.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblIdentifiant.Location = new System.Drawing.Point(-3, 183);
+            this.lblIdentifiant.Name = "lblIdentifiant";
+            this.lblIdentifiant.Size = new System.Drawing.Size(889, 42);
+            this.lblIdentifiant.TabIndex = 18;
+            this.lblIdentifiant.Text = "Identifiant";
+            this.lblIdentifiant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblNotif
+            // 
+            this.lblNotif.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNotif.Font = new System.Drawing.Font("Maiandra GD", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNotif.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblNotif.Location = new System.Drawing.Point(3, 387);
+            this.lblNotif.Name = "lblNotif";
+            this.lblNotif.Size = new System.Drawing.Size(876, 36);
+            this.lblNotif.TabIndex = 17;
+            this.lblNotif.Text = "Votre mot de passe est incorrecte";
+            this.lblNotif.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTitre_Authntification
+            // 
+            this.lblTitre_Authntification.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTitre_Authntification.Font = new System.Drawing.Font("Maiandra GD", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitre_Authntification.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblTitre_Authntification.Location = new System.Drawing.Point(0, 81);
+            this.lblTitre_Authntification.Name = "lblTitre_Authntification";
+            this.lblTitre_Authntification.Size = new System.Drawing.Size(889, 72);
+            this.lblTitre_Authntification.TabIndex = 12;
+            this.lblTitre_Authntification.Text = "Authentification";
+            this.lblTitre_Authntification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnQuitter
+            // 
+            this.btnQuitter.BackColor = System.Drawing.Color.Goldenrod;
+            this.btnQuitter.FlatAppearance.BorderColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnQuitter.FlatAppearance.BorderSize = 2;
+            this.btnQuitter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGoldenrod;
+            this.btnQuitter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
+            this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitter.Font = new System.Drawing.Font("Maiandra GD", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnQuitter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQuitter.Location = new System.Drawing.Point(690, 516);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(146, 42);
+            this.btnQuitter.TabIndex = 11;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = false;
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
             // Acceuil_Authentification
             // 
+            this.AcceptButton = this.btnConnexion;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lblVerif);
-            this.Controls.Add(this.lblMotDePasse);
-            this.Controls.Add(this.lblIdentifiant);
-            this.Controls.Add(this.lblTitre);
-            this.Controls.Add(this.btnQuitter);
-            this.Controls.Add(this.txtbMotDePasse);
-            this.Controls.Add(this.txtbIdentifiant);
-            this.Controls.Add(this.btnConnexion);
+            this.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.ClientSize = new System.Drawing.Size(900, 610);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Acceuil_Authentification";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Authentification";
+            this.Load += new System.EventHandler(this.Acceuil_Authentification_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnConnexion;
         private System.Windows.Forms.TextBox txtbIdentifiant;
         private System.Windows.Forms.TextBox txtbMotDePasse;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnQuitter;
-        private System.Windows.Forms.Label lblTitre;
-        private System.Windows.Forms.Label lblIdentifiant;
+        private System.Windows.Forms.Label lblTitre_Authntification;
+        private System.Windows.Forms.Label lblMotDePasseOublie;
         private System.Windows.Forms.Label lblMotDePasse;
-        private System.Windows.Forms.Label lblVerif;
+        private System.Windows.Forms.Label lblIdentifiant;
+        private System.Windows.Forms.Label lblNotif;
+        private System.Windows.Forms.Button btnConnexion;
     }
 }
